@@ -17,10 +17,13 @@
     --memoria-bg: #ffb21e;
     --verbal-bg: #00BB8F;
     --visual-bg: #1125D6;
+    --very-light-blue: #ECF2FF;
+
 }
 
 body{
     font-size: 1.6rem;
+    background: var(--very-light-blue);
 }
 
 .resultado{
@@ -73,6 +76,7 @@ margin-bottom: 2.5 rem;
 
 .resumo {
     padding: 2.4rem 3.2rem;
+    background: var(--white);
 
 } 
 
@@ -126,7 +130,6 @@ margin-bottom: 2.5 rem;
 }
 
 .resumo button {
-    
     margin-top: 0.8rem;
     width: 100%;
     border: none;
@@ -136,4 +139,42 @@ margin-bottom: 2.5 rem;
     border-radius: 12.8rem;
     font-size: 1.8rem;
      font-weight: 700;
+} 
+
+@media (min-width: 736px) {
+    body {
+        min-height: 100svh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 736px;
+    } 
+
+    .resultado h1 {
+        font-size 2.4rem;
+    }
+
+    resultado div{
+        width: 20rem;
+        height: 20rem;
+    } 
+    .resultado div strong: :nth-of-type(1) {
+        font-size: 7.2 rem;
+    }
+
+    .resultado div strong: :nth-of-type(2){
+        font-size: 1.8rem;
+    } 
+
+    .resultado h2 {
+        font-size: 3.2rem
+        margin-bottom: 1.6rem;
+    }
+
+
 }
